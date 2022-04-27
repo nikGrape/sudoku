@@ -1,0 +1,57 @@
+:root {
+    --width: 250px;
+    --height: 250px;
+    --small-border: rgb(187, 187, 187);
+    --big-border: rgb(68, 63, 63);
+}
+
+.square {
+    background-color: white;
+    border: none;
+    width: 97.5%;
+    height: 97.5%;
+    font-size: large;
+    user-select: none;
+    outline: none; /*prevent selection*/
+    color: #028cfd;
+}
+
+.original-square {
+    color: black;
+}
+
+.wrong {
+    color: red;
+}
+
+.area {
+    background-color: #eeeeff;
+}
+
+.same-as-selected {
+    background-color: rgb(197, 217, 229);
+    user-select: none;
+}
+
+.selected {
+    background-color: rgb(170, 209, 236);
+    user-select: none;
+}
+
+.thick-left-border {
+    border-left: 1px solid var(--big-border);
+}
+
+.thick-bottom-border {
+    border-bottom: 1px solid var(--big-border);
+}
+
+.field {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--small-border);
+    border: 1px solid var(--big-border);
+}
